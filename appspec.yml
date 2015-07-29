@@ -11,6 +11,12 @@ hooks:
     - location: scripts/start_server
       timeout: 300
       runas: root
+    - location: scripts/mysql_password.sh
+      timeout: 300
+      runas: root
+    - location: scripts/mysql_create_table.sh
+      timeout: 300
+      runas: root
   ApplicationStop:
     - location: scripts/stop_server
       timeout: 300
