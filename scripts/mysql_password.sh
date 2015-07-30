@@ -6,5 +6,4 @@ DELETE FROM mysql.user WHERE User='';
 DELETE FROM mysql.db WHERE Db='test' OR Db='test\_%';
 FLUSH PRIVILEGES;
 CREATE DATABASE practice;
-USE practice;
 EOF
