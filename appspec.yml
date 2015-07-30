@@ -22,7 +22,7 @@ hooks:
       timeout: 300
       runas: root
   AfterInstall:
-    - location: scripts/copyweb_server.sh
+    - location: scripts/copy_webserver.sh
       timeout: 180
       runas: root
 
