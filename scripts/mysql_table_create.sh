@@ -1,13 +1,12 @@
 #!/bin/bash
 mysql -u localhost -u root -proot -D test << EOD1
-CREATE TABLE customers(
-  id CHAR (32) NOT NULL,
-  PRIMARY KEY(id),
-  first_name VARCHAR(64),
-  last_name VARCHAR(64),
-  email VARCHAR(64)
+CREATE TABLE contact
+(
+contactID INT(9) NOT NULL auto_increment,
+contactName VARCHAR(40) NOT NULL,
+contactEmail VARCHAR(40) NOT NULL,
+message VARCHAR(250) NOT NULL,
+PRIMARY KEY(contactID)
 );
 
-INSERT INTO customers ( id, first_name, last_name, email ) VALUES ( uuid(), 'Jane', 'Smith', 'jane.smith@example.com' );
-INSERT INTO customers ( id, first_name, last_name, email ) VALUES ( uuid(), 'Dave', 'Richards', 'dave.richards@example.com' );
 EOD1
