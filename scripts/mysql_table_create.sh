@@ -1,5 +1,5 @@
 #!/bin/bash
-mysql -u practice.cd5vru9wzyku.us-west-2.rds.amazonaws.com -u root -proot -D practice << EOD1
+mysql -u localhost -u root -proot -D practice << EOD1
 CREATE TABLE contact
 (
 contactID INT(9) NOT NULL auto_increment,
