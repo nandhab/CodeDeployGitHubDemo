@@ -1,5 +1,5 @@
 #!/bin/bash
-mysql -u localhost -u root -proot -D practice << EOD1
+mysql -u localhost -u root -pcomverse -D practice << EOD1
 CREATE TABLE contact
 (
 contactID INT(9) NOT NULL auto_increment,
